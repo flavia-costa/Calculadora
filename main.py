@@ -1,38 +1,36 @@
-from calculadora import *
+from calculator import *
 
 def menu():
-    print("--------(Calculadora)---------")
-    print("Escolha a operação desejada:")
-    print("1 - Soma")
-    print("2 - Subtração")
-    print("3 - Multiplicação")
-    print("4 - Divisão")
-    print("5 - Exponenciação")
-    print("0 - Sair")
+    print("--------(Calculator)---------")
+    print("Choose desired operation:")
+    print("1 - Addition")
+    print("2 - Subtraction")
+    print("3 - Multiplication")
+    print("4 - Division")
+    print("5 - Exponentiation")
+    print("0 - Exit")
     print("-------------------------------")
-
 
 while True:
     menu()
-    op = input("Digite a opção desejada: ")
+    op = input("Enter the desired option: ")
 
     if op == '0':
         break
 
-    num1 = float(input("Digite o primeiro número: "))
-    num2 = float(input("Digite o segundo número: "))
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
 
     if op == '1':
-        resultado = soma(num1, num2)
+        result = addition(num1, num2)
     elif op == '2':
-        resultado = subtracao(num1, num2)
+        result = subtraction(num1, num2)
     elif op == '3':
-        resultado = multiplicacao(num1, num2)
+        result = multiplication(num1, num2)
     elif op == '4':
-        resultado = divisao(num1, num2)
+        result = division(num1, num2)
     elif op == '5':
-        resultado = expoenciacao(num1, num2)
-   
-    print("----------------------")
-    print("Resultado: ", resultado)
+        result = exponentiation(num1, num2)
 
+    print("----------------------")
+    print("Result: ", result)
