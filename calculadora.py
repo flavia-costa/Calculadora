@@ -1,17 +1,17 @@
-def soma(a, b):
+def addition(a, b):
     return a + b
 
-def subtracao(a, b):
+def subtraction(a, b):
     return a - b
 
-def multiplicacao(a, b):
+def multiplication(a, b):
     return a * b
 
-def divisao(a, b):
+def division(a, b):
     if b == 0:
         return "Erro: divisão por zero"
     else:
         return a / b
 
-def expoenciacao(a, b):
+def exponentiation(a, b):
     return a ** b
